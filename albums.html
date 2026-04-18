@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style1.css">
+
+
+
+        
+    </head>
+
+    <body>
+ 
+
+        <header>
+             <div class="navbar">
+        <div class="logo">
+  <a href="index.html">
+    <img src="image/logo-Photoroom.png" alt="MusicWorld Logo">
+  </a>
+     </div>
+       <div class="menu-toggle" id="mobile-menu">
+            &#9776;
+        </div>
+
+        <div class="nav-links">
+       <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+    <a href="genres.html">Genres</a>
+    <a href="artists.html">Artists</a>
+    <a href="albums.html">Albums</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  
+        </header>
+        <main>
+        
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="image/artists 23.jpg" alt="">
+    <h1>🎶 Music Albums</h1>
+    <p>Rock, Jazz, Pop, Rap & Classical Collections</p>
+  </div>
+
+  <!-- Rock Albums -->
+  <section>
+    <h2>🎸 Rock Albums</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/hassan 1.jpeg" alt="Rock Album">
+        <h3>Rock Song One</h3>
+        <audio id="rock1" src="song/Junoon - Sayonee (Official Music Video).mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('rock1')">⏹</button>
+          <button class="btn" onclick="togglePlay('rock1', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentrock1">0:00</span>
+          <input type="range" id="progressrock1" class="progress" value="0" step="1">
+          <span class="time" id="durationrock1">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('rock1', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 2.jpg" alt="Rock Album">
+        <h3>Rock Song Two</h3>
+        <audio id="rock2" src="song/laree Choote lyrics Original.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('rock2')">⏹</button>
+          <button class="btn" onclick="togglePlay('rock2', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentrock2">0:00</span>
+          <input type="range" id="progressrock2" class="progress" value="0" step="1">
+          <span class="time" id="durationrock2">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('rock2', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 3.jpg" alt="Rock Album">
+        <h3>Rock Song Three</h3>
+        <audio id="rock3" src="song/Suno Ke Mein Hun Jawan _ Noori World.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('rock3')">⏹</button>
+          <button class="btn" onclick="togglePlay('rock3', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentrock3">0:00</span>
+          <input type="range" id="progressrock3" class="progress" value="0" step="1">
+          <span class="time" id="durationrock3">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('rock3', this.value)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jazz Albums -->
+  <section>
+    <h2>🎷 Jazz Albums</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/hassan 4.jpg" alt="Jazz Album">
+        <h3>Jazz Song One</h3>
+        <audio id="jazz1" src="song/Sachal Jazz Ensemble  Take Five .mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('jazz1')">⏹</button>
+          <button class="btn" onclick="togglePlay('jazz1', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentjazz1">0:00</span>
+          <input type="range" id="progressjazz1" class="progress" value="0" step="1">
+          <span class="time" id="durationjazz1">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('jazz1', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 7.jpeg" alt="Jazz Album">
+        <h3>Jazz Song Two</h3>
+        <audio id="jazz2" src="song/Coke Studio Season 12 _ Roshe _ Zeb Bangash.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('jazz2')">⏹</button>
+          <button class="btn" onclick="togglePlay('jazz2', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentjazz2">0:00</span>
+          <input type="range" id="progressjazz2" class="progress" value="0" step="1">
+          <span class="time" id="durationjazz2">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('jazz2', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 8.jpeg" alt="Jazz Album">
+        <h3>Jazz Song Three</h3>
+        <audio id="jazz3" src="song/Mekaal Hasan Band _ Raba _ Sampooran _ MHB Song.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('jazz3')">⏹</button>
+          <button class="btn" onclick="togglePlay('jazz3', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentjazz3">0:00</span>
+          <input type="range" id="progressjazz3" class="progress" value="0" step="1">
+          <span class="time" id="durationjazz3">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('jazz3', this.value)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pop Albums -->
+  <section>
+    <h2>🎤 Pop Albums</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/hassan 9.jpeg" alt="Pop Album">
+        <h3>Pop Song One</h3>
+        <audio id="pop1" src="song/Atif Aslam - Pehli Nazar Main(O Jane Ja)-Live Acoustic version on Roof top for Mtv Iggy..mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('pop1')">⏹</button>
+          <button class="btn" onclick="togglePlay('pop1', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentpop1">0:00</span>
+          <input type="range" id="progresspop1" class="progress" value="0" step="1">
+          <span class="time" id="durationpop1">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('pop1', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 10.jpeg" alt="Pop Album">
+        <h3>Pop Song Two</h3>
+        <audio id="pop2" src="song/Ali Zafar I Aik Pal I Huqa Pani I Ali Zafar s Debut album.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('pop2')">⏹</button>
+          <button class="btn" onclick="togglePlay('pop2', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentpop2">0:00</span>
+          <input type="range" id="progresspop2" class="progress" value="0" step="1">
+          <span class="time" id="durationpop2">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('pop2', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 11.jpeg" alt="Pop Album">
+        <h3>Pop Song Three</h3>
+        <audio id="pop3" src="song/Nazia Hassan Live   Aap Jaisa Koi.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('pop3')">⏹</button>
+          <button class="btn" onclick="togglePlay('pop3', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentpop3">0:00</span>
+          <input type="range" id="progresspop3" class="progress" value="0" step="1">
+          <span class="time" id="durationpop3">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('pop3', this.value)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rap Albums -->
+  <section>
+    <h2>🎧 Rap Albums</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/hassan 12.jpeg" alt="Rap Album">
+        <h3>Rap Song One</h3>
+        <audio id="rap1" src="song/04. Mein Aur Mere Idols _ Talha Anjum (Prod. Umair Khan).mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('rap1')">⏹</button>
+          <button class="btn" onclick="togglePlay('rap1', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentrap1">0:00</span>
+          <input type="range" id="progressrap1" class="progress" value="0" step="1">
+          <span class="time" id="durationrap1">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('rap1', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 13.jpeg" alt="Rap Album">
+        <h3>Rap Song Two</h3>
+        <audio id="rap2" src="song/BOHEMIA  Zamana Jali Video Song _ Skull & Bones _ T-Series _ New Song 2016.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('rap2')">⏹</button>
+          <button class="btn" onclick="togglePlay('rap2', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentrap2">0:00</span>
+          <input type="range" id="progressrap2" class="progress" value="0" step="1">
+          <span class="time" id="durationrap2">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('rap2', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 14.jpeg" alt="Rap Album">
+        <h3>Rap Song Three</h3>
+        <audio id="rap3" src="song/Blockbuster _ Coke Studio Pakistan _ Season 15 _ Faris Shafi x Umair Butt x Gharwi Group.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('rap3')">⏹</button>
+          <button class="btn" onclick="togglePlay('rap3', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentrap3">0:00</span>
+          <input type="range" id="progressrap3" class="progress" value="0" step="1">
+          <span class="time" id="durationrap3">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('rap3', this.value)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classical Albums -->
+  <section>
+    <h2>🎻 Classical Albums</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="image/hassan 9.jpeg" alt="Classical Album">
+        <h3>Classical Song One</h3>
+        <audio id="classical1" src="song/Mast Qalandar __ Chaabi Maira __ Kailash Kher __ Taposh __ Mizan __ Bumblefoot __ Marco Minnemann.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('classical1')">⏹</button>
+          <button class="btn" onclick="togglePlay('classical1', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentclassical1">0:00</span>
+          <input type="range" id="progressclassical1" class="progress" value="0" step="1">
+          <span class="time" id="durationclassical1">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('classical1', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 11.jpeg" alt="Classical Album">
+        <h3>Classical Song Two</h3>
+        <audio id="classical2" src="song/Chupke Chupke Raat Din _ Ustad Ghulam Ali Khan _ Live.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('classical2')">⏹</button>
+          <button class="btn" onclick="togglePlay('classical2', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentclassical2">0:00</span>
+          <input type="range" id="progressclassical2" class="progress" value="0" step="1">
+          <span class="time" id="durationclassical2">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('classical2', this.value)">
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hassan 7.jpeg" alt="Classical Album">
+        <h3>Classical Song Three</h3>
+        <audio id="classical3" src="song/Coke Studio Season 9_ BTS_ Maula-e-Kull_ Abida Parveen.mp4"></audio>
+        <div class="controls">
+          <button class="btn" onclick="stopSong('classical3')">⏹</button>
+          <button class="btn" onclick="togglePlay('classical3', this)">▶</button>
+        </div>
+        <div class="progress-container">
+          <span class="time" id="currentclassical3">0:00</span>
+          <input type="range" id="progressclassical3" class="progress" value="0" step="1">
+          <span class="time" id="durationclassical3">0:00</span>
+        </div>
+        <div class="volume-container">
+          🔊 <input type="range" min="0" max="1" step="0.05" value="1" onchange="setVolume('classical3', this.value)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function togglePlay(id, btn) {
+      let audio = document.getElementById(id);
+      if (audio.paused) {
+        stopAll(id);
+        audio.play();
+        btn.textContent = "⏸";
+      } else {
+        audio.pause();
+        btn.textContent = "▶";
+      }
+
+      audio.ontimeupdate = () => updateProgress(id);
+      audio.onloadedmetadata = () => {
+        document.getElementById("duration" + id).textContent = formatTime(audio.duration);
+      };
+    }
+
+    function stopSong(id) {
+      let audio = document.getElementById(id);
+      audio.pause();
+      audio.currentTime = 0;
+      document.querySelector(`button[onclick="togglePlay('${id}', this)"]`).textContent = "▶";
+    }
+
+    function stopAll(currentId) {
+      document.querySelectorAll("audio").forEach(audio => {
+        if (audio.id !== currentId) {
+          audio.pause();
+          audio.currentTime = 0;
+          document.querySelector(`button[onclick="togglePlay('${audio.id}', this)"]`).textContent = "▶";
+        }
+      });
+    }
+
+    function updateProgress(id) {
+      let audio = document.getElementById(id);
+      let progress = document.getElementById("progress" + id);
+      let current = document.getElementById("current" + id);
+
+      progress.max = audio.duration;
+      progress.value = audio.currentTime;
+      current.textContent = formatTime(audio.currentTime);
+
+      progress.oninput = () => {
+        audio.currentTime = progress.value;
+      };
+    }
+
+    function setVolume(id, value) {
+      document.getElementById(id).volume = value;
+    }
+
+    function formatTime(sec) {
+      let minutes = Math.floor(sec / 60) || 0;
+      let seconds = Math.floor(sec % 60) || 0;
+      return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    }
+  </script>
+
+        </main>
+      
+    <footer class="bg-black text-white py-3 mt-5">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        
+        
+        <div class="d-flex align-items-center mb-2 mb-md-0">
+          <img src="image/logo-Photoroom.png" alt="MusicWorld Logo" height="28" class="me-2">
+          <span class="fw-bold fs-6">MusicWorld</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="mb-2 mb-md-0 text-center">
+          <a href="index.html" class="footer-link me-3">Home</a>
+          <a href="about.html" class="footer-link me-3">About</a>
+          <a href="genres.html" class="footer-link me-3">Genres</a>
+          <a href="artists.html" class="footer-link me-3">Artists</a>
+          <a href="albums.html" class="footer-link me-3">Albums</a>
+          <a href="news.html" class="footer-link me-3">News</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div>
+          <a href="#" class="footer-icon me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-icon me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="footer-icon me-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-icon me-2"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-spotify"></i></a>
+        </div>
+      </div>
+
+      <hr class="text-secondary my-2">
+
+      <!-- Bottom Line -->
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small text-secondary">
+        <p class="mb-1 mb-md-0">© 2025 MusicWorld</p>
+        <div>
+          <a href="#" class="footer-link me-2">Privacy</a>
+          <a href="#" class="footer-link me-2">Terms</a>
+          <a href="#" class="footer-link">Cookies</a>
+        </div>
+      </div>
+    </footer>
+ 
+    <script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
